@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.11 on win32)" generated="20220406 12:22:21.491" rpa="false" schemaversion="3">
+<suite id="s1" name="Tc 05" source="C:\Users\RASEL\PycharmProjects\API_Robot_Practice\TestCases\tc_05.robot">
+<test id="s1-t1" name="Get_All_Wall Street Journal" line="10">
+<kw name="Wall Street Journal" library="all_test_case">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysession</arg>
+<arg>${Url_five}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220406 12:22:21.601" level="INFO">Creating Session using : alias=mysession, url=https://newsapi.org/v2/everything?domains=wsj.com&amp;apiKey=e7cdf1ae162b4475bbbee8a4046797a4, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220406 12:22:21.601" endtime="20220406 12:22:21.601"/>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>${Url_five}</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<msg timestamp="20220406 12:22:21.601" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220406 12:22:23.045" level="INFO">GET Request : url=https://newsapi.org/v2/everything?domains=wsj.com&amp;apiKey=e7cdf1ae162b4475bbbee8a4046797a4 
+ path_url=/v2/everything?domains=wsj.com&amp;apiKey=e7cdf1ae162b4475bbbee8a4046797a4 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220406 12:22:23.045" level="INFO">GET Response : url=https://newsapi.org/v2/everything?domains=wsj.com&amp;apiKey=e7cdf1ae162b4475bbbee8a4046797a4 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 06 Apr 2022 06:22:22 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Cached-Result': 'true', 'X-Cache-Remaining': '99', 'X-Cache-Expires': 'Wed, 06 Apr 2022 06:26:46 GMT', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=TPGw6AetBZ5b4o38GhpKd4jgdlIpWzt%2BfxiBd85Lhk72PF1eP6Qx%2B0Cf6nEufMMWa6z9%2B2mq52gwR1R5wFeUkiqLGmZwftKeorut8cBDq17lcHwJMIK9Pk9O6Q2D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6f786db6b853336c-DAC', 'Content-Encoding': 'gzip'} 
+ body={"status":"ok","totalResults":714,"articles":[{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":null,"title":"财新3月中国服务业PMI和综合PMI均降至2020年2月以来最低 - Wall Street Journal","description":"财新传媒和研究公司Markit公布，财新中国3月份服务业PMI大幅下滑至42，服务业重陷收缩，且收缩率显著；3月综合PMI则降至43.9。二者均创2020年2月首轮疫情爆发后最严重萎缩。","url":"https://cn.wsj.com/articles/财新3月中国服务业pmi和综合pmi均降至2020年2月以来最低-11649211965","urlToImage":"https://s.wsj.net/public/resources/images/S1-GL964_cresta_G_20200618091834.jpg","publishedAt":"2022-04-06T02:26:00Z","content":"Markit3(PMI)4220202\r\n2PMI50.29151.420211253.1\r\n20202PMI26.5200511555.0\r\n202182020520218PMI46.720204\r\n..."},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Alexandra Bruell, Keach Hagey","title":"Bill Would Let Publishers Use Arbitration to Settle FACEBOOKGOOGLE Disputes...","description":"Bill Would Let Publishers Use Arbitration to Settle FACEBOOKGOOGLE Disputes...\r\n\n \n \n \n (First column, 7th story, link)\r\n\n \r\n\n \r\n\n \n Related stories:Internet splitting along party lines...\r\nDorsey says he's partially to blame for centralization...\r\nMUSK TO BR…","url":"https://www.wsj.com/articles/bill-would-let-small-publishers-use-baseball-style-arbitration-to-settle-disputes-with-google-and-facebook-11649190805","urlToImage":"https://images.wsj.net/im-518968/social","publishedAt":"2022-04-05T22:04:37Z","content":"Newly revamped federal legislation aimed at helping news publishers negotiate deals with tech giants would create a baseball-style arbitration process to settle disputes and wouldnt apply to the bigg… [+378 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Catherine Stupp, Laurence Norman, Ian Talley, James Rundle, William Mauldin, Lindsay Wise, Daniel Michaels","title":"Russia-Ukraine War Latest News: Live Updates - The Wall Street Journal","description":"&lt;ol&gt;&lt;li&gt;Russia-Ukraine War Latest News: Live Updates  The Wall Street Journal\r\n&lt;/li&gt;&lt;li&gt;Russia preparing offensive in southern, eastern Ukraine, officials say  Fox News\r\n&lt;/li&gt;&lt;li&gt;Ukraine Maps Reveal Russia Has Lost Huge Amount of Territory in Last Week  Newsw…","url":"https://www.wsj.com/livecoverage/russia-ukraine-latest-news-2022-04-05","urlToImage":"https://images.wsj.net/im-518560/social","publishedAt":"2022-04-05T19:41:00Z","content":"Cyberattacks from Russia continued to increase in late March, mostly through attempts to gather information from, and spread malware to, Ukrainian critical infrastructure, Ukraine cyber officials sai… [+2222 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Gabriel T. Rubin and Andrew Restuccia","title":"Biden Administration to Extend Student-Loan Payment Pause Through End of August - The Wall Street Journal","description":"&lt;ol&gt;&lt;li&gt;Biden Administration to Extend Student-Loan Payment Pause Through End of August  The Wall Street Journal\r\n&lt;/li&gt;&lt;li&gt;Biden administration will extend pause on federal student loan repayments through August  CNN\r\n&lt;/li&gt;&lt;li&gt;Why Biden is stuck on student-de…","url":"https://www.wsj.com/articles/biden-administration-to-extend-student-loan-payment-moratorium-until-end-of-august-11649181610","urlToImage":"https://images.wsj.net/im-518825/social","publishedAt":"2022-04-05T19:20:00Z","content":"WASHINGTONThe Biden administration is planning to extend until the end of August a pause on federal student-loan payments, according to people familiar with the matter.\r\nThe extension could be announ… [+299 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Jon Kamp and Brianna Abbott","title":"Omicron BA.2 Variant Pressures Parts of U.S. - The Wall Street Journal","description":"&lt;ol&gt;&lt;li&gt;Omicron BA.2 Variant Pressures Parts of U.S.  The Wall Street Journal\r\n&lt;/li&gt;&lt;li&gt;Minnesota health officials say Omicron subvariant could bring wave of COVID-19 cases | FOX 9 KMSP  FOX 9 Minneapolis-St. Paul\r\n&lt;/li&gt;&lt;li&gt;More contagious omicron BA.2 on tra…","url":"https://www.wsj.com/articles/omicron-ba-2-variant-pressures-parts-of-u-s-11649181325","urlToImage":"https://images.wsj.net/im-518756/social","publishedAt":"2022-04-05T18:23:00Z","content":"The Omicron BA.2 variant is increasing its share of U.S. cases and putting particular pressure on parts of the Northeast, where wastewater readings and Covid-19 cases have ticked upward again from lo… [+493 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Stella Yifan Xie","title":"Shanghai Woman's 16-Hour Bus Ride Into Quarantine...","description":"Shanghai Woman's 16-Hour Bus Ride Into Quarantine...\r\n\n \n \n \n (Second column, 13th story, link)\r\n\n \r\n\n \r\n\n \n Related stories:Cases in China Hit Record...\r\nHawaii officials consider new uses for virus screening tech...\r\nWORLD SICK MAP...","url":"https://www.wsj.com/articles/shanghai-womans-16-hour-bus-ride-into-quarantine-my-only-wish-is-to-leave-this-place-alive-11649131637","urlToImage":"https://images.wsj.net/im-518408/social","publishedAt":"2022-04-05T17:22:41Z","content":"HONG KONGLu Jiaying hasnt tested positive for Covid, and hasnt experienced any symptoms.\r\nBut at 7 p.m. on Sunday, the 34-year-old technology worker and resident of central Shanghai, was ordered to b… [+39 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"James Marson | Photographs by Emanuele Satolli for The Wall Street Journal","title":"Execution of Village Mayor Becomes Symbol of Russian Brutality in Ukraine - The Wall Street Journal","description":"&lt;ol&gt;&lt;li&gt;Execution of Village Mayor Becomes Symbol of Russian Brutality in Ukraine  The Wall Street Journal\r\n&lt;/li&gt;&lt;li&gt;Russia invades Ukraine: Live updates  CNN\r\n&lt;/li&gt;&lt;li&gt;More photos from Ukraine-Russia war massacre in Bucha, devastation in Mariupol  Fox News\r\n…","url":"https://www.wsj.com/articles/execution-of-village-mayor-becomes-symbol-of-russian-brutality-in-ukraine-11649176611","urlToImage":"https://images.wsj.net/im-518483/social","publishedAt":"2022-04-05T16:36:00Z","content":"MOTYZHYN, UkraineFor more than a decade, Mayor Olha Sukhenko took care of this central Ukrainian village like a family, locals say, sprucing up public buildings, organizing concerts and settling disp… [+226 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Sarah E. Needleman and Meghan Bobrowsky","title":"Elon Musk to Join Twitter’s Board of Directors After Becoming Largest Shareholder - The Wall Street Journal","description":"&lt;ol&gt;&lt;li&gt;Elon Musk to Join Twitter’s Board of Directors After Becoming Largest Shareholder  The Wall Street Journal\r\n&lt;/li&gt;&lt;li&gt;Elon Musk Is Now Twitter's Newest And Biggest Shareholder  MSNBC\r\n&lt;/li&gt;&lt;li&gt;Elon Musk toys with Twitter hours after becoming its larges…","url":"https://www.wsj.com/articles/twitter-to-name-elon-musk-to-its-board-of-directors-11649162614","urlToImage":"https://images.wsj.net/im-518545/social","publishedAt":"2022-04-05T16:31:00Z","content":"Twitter Inc. said it would appoint Tesla Inc. Chief Executive Elon Musk to its board, essentially bringing the billionaire social-media agitator inside the fold. \r\nMr. Musk on Monday disclosed a 9.2%… [+230 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Laurence Norman","title":"EU Planning to Sanction Two of Putin’s Daughters in Latest Round of Restrictions - The Wall Street Journal","description":"&lt;ol&gt;&lt;li&gt;EU Planning to Sanction Two of Putin’s Daughters in Latest Round of Restrictions  The Wall Street Journal\r\n&lt;/li&gt;&lt;li&gt;Putin's Daughters Risk EU Sanctions Amid Outrage Over Ukraine  Bloomberg\r\n&lt;/li&gt;&lt;li&gt;EU planning to sanction 2 of Putin's daughters in la…","url":"https://www.wsj.com/articles/eu-planning-to-sanction-two-of-putinsdaughters-in-latest-round-of-restrictions-11649174279","urlToImage":"https://images.wsj.net/im-518701/social","publishedAt":"2022-04-05T15:57:00Z","content":"The European Union has proposed sanctioning two of President Vladimir Putins daughters, according to diplomats familiar with the plan, a move that would add the Russian leaders closest family members… [+295 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Joe Flint","title":"WarnerMedia Chief Executive Jason Kilar Resigns - The Wall Street Journal","description":"&lt;ol&gt;&lt;li&gt;WarnerMedia Chief Executive Jason Kilar Resigns  The Wall Street Journal\r\n&lt;/li&gt;&lt;li&gt;WarnerMedia CEO Jason Kilar Exits Ahead of Merger With Discovery  Variety\r\n&lt;/li&gt;&lt;li&gt;WarnerMedia CEO Jason Kilar Exiting When Discovery Deal Closes  Hollywood Reporter\r\n…","url":"https://www.wsj.com/articles/warnermedia-chief-executive-jason-kilar-resigns-11649172571","urlToImage":"https://images.wsj.net/im-518086/social","publishedAt":"2022-04-05T15:29:00Z","content":"WarnerMedia Chief Executive Jason Kilar, who led one of the most radical overhauls in the entertainment industry, plans to exit his post Friday.\r\nThe move comes in advance of WarnerMedia parent compa… [+162 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Fiorella Valdesolo","title":"Stomach Tightening New Skin-Care Trend...","description":"Stomach Tightening New Skin-Care Trend...\r\n\n \n \n \n (Third column, 14th story, link)\r\n\n \r\n\n \r\n\n \n \n Drudge Report Feed needs your support!   Become a Patron","url":"https://www.wsj.com/articles/stomach-tightening-skin-care-trend-11649161075","urlToImage":"https://images.wsj.net/im-518058/social","publishedAt":"2022-04-05T13:22:39Z","content":"The Miu Miu set, a scant crop top and ultra-low-rise pleated mini that was part of the brands spring/summer 2022 collection, has now been photographed and knocked off so many times that it has its ow… [+7207 chars]"},{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":"Rachel Liang, Rebecca Feng and Liyan Qi","... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220406 12:22:23.045" level="INFO">c:\users\rasel\pycharmprojects\api_robot_practice\venv\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'newsapi.org'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220406 12:22:23.045" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220406 12:22:21.601" endtime="20220406 12:22:23.045"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220406 12:22:23.045" endtime="20220406 12:22:23.045"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220406 12:22:23.045" endtime="20220406 12:22:23.060"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.headers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220406 12:22:23.060" endtime="20220406 12:22:23.060"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20220406 12:22:23.060" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20220406 12:22:23.060" endtime="20220406 12:22:23.060"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220406 12:22:23.060" endtime="20220406 12:22:23.060"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20220406 12:22:23.060" level="INFO">${body} = {"status":"ok","totalResults":714,"articles":[{"source":{"id":"the-wall-street-journal","name":"The Wall Street Journal"},"author":null,"title":"\xe8\xb4\xa2\xe6\x96\xb03\xe6\x9c\x88\xe4\xb8\xad\xe5\x...</msg>
+<status status="PASS" starttime="20220406 12:22:23.060" endtime="20220406 12:22:23.060"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${body}</arg>
+<arg>The Wall Street Journal</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220406 12:22:23.060" endtime="20220406 12:22:23.060"/>
+</kw>
+<status status="PASS" starttime="20220406 12:22:21.601" endtime="20220406 12:22:23.060"/>
+</kw>
+<status status="PASS" starttime="20220406 12:22:21.601" endtime="20220406 12:22:23.060"/>
+</test>
+<status status="PASS" starttime="20220406 12:22:21.491" endtime="20220406 12:22:23.060"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc 05">Tc 05</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220406 12:22:21.601" level="ERROR">Error in file 'C:\Users\RASEL\PycharmProjects\API_Robot_Practice\TestCases\tc_05.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\RASEL\PycharmProjects\API_Robot_Practice\venv\Scripts\robot.exe
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\python39.zip
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\DLLs
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\lib
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39
+  c:\users\rasel\pycharmprojects\api_robot_practice\venv
+  c:\users\rasel\pycharmprojects\api_robot_practice\venv\lib\site-packages</msg>
+<msg timestamp="20220406 12:22:21.601" level="ERROR">Error in file 'C:\Users\RASEL\PycharmProjects\API_Robot_Practice\Variables\variable.robot' on line 2: Importing library 'RequestLibrary' failed: ModuleNotFoundError: No module named 'RequestLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\RASEL\PycharmProjects\API_Robot_Practice\venv\Scripts\robot.exe
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\python39.zip
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\DLLs
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\lib
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39
+  c:\users\rasel\pycharmprojects\api_robot_practice\venv
+  c:\users\rasel\pycharmprojects\api_robot_practice\venv\lib\site-packages</msg>
+<msg timestamp="20220406 12:22:21.601" level="ERROR">Error in file 'C:\Users\RASEL\PycharmProjects\API_Robot_Practice\Pages\all_test_case.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\RASEL\PycharmProjects\API_Robot_Practice\venv\Scripts\robot.exe
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\python39.zip
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\DLLs
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39\lib
+  C:\Users\RASEL\AppData\Local\Programs\Python\Python39
+  c:\users\rasel\pycharmprojects\api_robot_practice\venv
+  c:\users\rasel\pycharmprojects\api_robot_practice\venv\lib\site-packages</msg>
+<msg timestamp="20220406 12:22:21.601" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+</errors>
+</robot>
